@@ -1,5 +1,6 @@
 import socket
 import threading
+import os
 
 
 class Server(threading.Thread):
@@ -42,4 +43,4 @@ class Server(threading.Thread):
 
 
 if __name__ == '__main__':
-    Server("zyrafal-proxy.herokuapp.com", 42069).run()
+    Server("zyrafal-proxy.herokuapp.com", int(os.environ.get('PORT', 25565))).run()
