@@ -42,4 +42,4 @@ class Server(threading.Thread):
 
 
 if __name__ == '__main__':
-    Server("localhost", 42069).run()
+    Server("zyrafal-proxy.herokuapp.com", 42069).run()
